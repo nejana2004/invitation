@@ -200,6 +200,14 @@
   .note{margin-top:calc(var(--k)*2.6);font-size:calc(var(--k)*2.3);letter-spacing:.18em;color:var(--ivory-dim);font-weight:600}
   .jump{border:1px solid var(--gold-hi);cursor:pointer}
 
+  /* line-art illustrations: white-on-black images tinted champagne gold, black blended away */
+  .art{display:block;height:auto;margin-left:auto;margin-right:auto;
+    filter:brightness(.63) sepia(1);mix-blend-mode:screen}
+  .scene{width:100%;max-width:calc(var(--k)*84);margin-top:calc(var(--k)*4);margin-bottom:calc(var(--k)*1);
+    -webkit-mask-image:radial-gradient(75% 70% at 50% 55%, #000 55%, transparent 100%);
+            mask-image:radial-gradient(75% 70% at 50% 55%, #000 55%, transparent 100%)}
+  .lion{width:calc(var(--k)*30);margin-top:calc(var(--k)*6)}
+
   /* ---------- pop-up ---------- */
   .modal{
     position:fixed;inset:0;z-index:50;display:flex;align-items:flex-start;justify-content:center;
@@ -277,6 +285,8 @@
       <p class="president gold">Rtr. Avintha Rathnayake</p>
       <p class="white">and his Board of Officials for the<br>RI Year 2026–27</p>
 
+      <img class="art scene" src="images/campus.webp" alt="" width="1448" height="1086" loading="lazy" decoding="async">
+
       <p class="on-day">On Sunday</p>
       <div class="date-row">
         <div class="side">November</div>
@@ -303,6 +313,8 @@
 
       <button class="jump open-rsvp" type="button" aria-haspopup="dialog">RSVP</button>
       <p class="note">Kindly confirm your attendance</p>
+
+      <img class="art lion" src="images/lion.webp" alt="" width="1086" height="1448" loading="lazy" decoding="async">
     </div>
   </article>
 
